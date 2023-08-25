@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareCalmly - tailwind practice</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="text-black">
+    <nav class="flex flex-row justify-between items-center bg-bgBlue py-4 pl-4 pr-2 border-b border-blueBorder sm:pl-6 sm:pr-4 md:px-8 xl:px-10">
+        <a href="#"><img src="assets/nav-logo.svg" alt=""></a>
+        <!--navigation-->
+        <div class="flex">
+            <div class="hidden md:flex flex-row mr-8">
+                <a href="#" class="px-4 py-3 hover:text-linkHover hover:bg-blueBorder">Pricing</a>
+                <a href="#" class="px-4 py-3 hover:text-linkHover hover:bg-blueBorder">How It Works</a>
+                <a href="#" class="px-4 py-3 hover:text-linkHover hover:bg-blueBorder">Features</a>
+                <a href="#" class="px-4 py-3 hover:text-linkHover hover:bg-blueBorder">Contact</a>
+            </div>
+            <button class="hidden sm:block px-4 py-3 bg-black text-white hover:bg-linkHover">Get Mac Plugin</button>
+            <!--burger menu-->
+            <a href="#" class="flex md:hidden flex-col justify-center items-center w-14 h-12 ml-2">
+                <div class="w-6 h-0.5 bg-black"></div>
+                <div class="w-6 h-0.5 my-1.5 bg-black"></div>
+                <div class="w-6 h-0.5 bg-black"></div>
+            </a>
+            <!--end burger menu-->
+        </div>
+        <!--end navigation-->
+    </nav>
+    <!--dropdown menu-->
+    <section class="flex flex-col md:hidden gap-2 bg-white px-4 py-8">
+        <div class="flex flex-col w-full">
+            <a href="#" class="px-4 py-3 text-center">Pricing</a>
+            <a href="#" class="px-4 py-3 text-center">How It Works</a>
+            <a href="#" class="px-4 py-3 text-center">Features</a>
+            <a href="#" class="px-4 py-3 text-center">Contact</a>
+            </div>
+        <button class="w-full px-4 py-3 text-center bg-black text-white">Get Mac Plugin</button>
+    </section>
+    <!--hero-->
+    <section class="px-4 pt-6 pb-12 sm:px-6 sm:pt-12 sm:pb-14 md:pl-8 md:pr-0 xl:px-74px bg-bgBlue">
+        <!--max width-->
+        <div class="max-w-fullXL mx-auto grid md:grid-cols-2">
+            <!--hero text-->
+            <div class="flex flex-col gap-3">
+                <h1 class="text-center text-6xl leading-4 sm:text-7xl sm:leading-4 md:text-left md:text-8xl md:leading-4 xl:text-9xl xl:leading-5">Share your screen without stressing</h1>
+                <p class="text-center mb-5 md:text-left">Avoid that pit in your stomach when you wonder if you closed the right windows.<br class="mb-6">Use ShareCalmly to set which apps and websites to auto-hide and never stress again.</p>
+                <!--hero button-->
+                <div class="flex flex-col items-center gap-2 sm:mb-2 md:mb-0 md:items-start ">
+                    <button class="w-full sm:w-auto flex flex-row justify-center gap-2 px-4 py-3 bg-black text-white">Get mac plugin<img src="assets/icon-arrow.svg" alt=""></button>
+                    <div class="flex flex-col items-center sm:flex-row sm:gap-1">
+                        <small class="text-md leading-normal">Windows version Coming Soon.</small>
+                        <a href="#" class="text-md leading-normal underline hover:text-linkHover">Pre-order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--end hero text-->
+            <picture class="mx-auto">
+                <img src="assets/img-hero.png" alt="">
+            </picture>
+        </div>
+    </section>
+    <!--how it works-->
+    <section class="px-4 pt-12 pb-14 bg-bgOrange">
+        <div class="max-w-fullXL flex flex-col items-center mx-auto">
+            <h2 class="text-4xl leading-3 mb-6 sm:text-6xl sm:leading-5">How it Works</h2>
+            <picture class="sm:px-8 sm:max-w-[570px] md:w-[684px] md:max-w-[684px] xl:min-w-[768px]">
+                <a href="https://www.youtube.com/watch?v=0crY6XqxjbU"><img src="assets/img-youtube.png" alt=""></a>
+            </picture>
+        </div>
+    </section>
+    <!--features-->
+    <section class="px-4 pt-12 pb-14 sm:px-0 sm:pt-14 sm:pb-16 md:px-20 lg:px-8 xl:px-74px bg-bgBlue">
+        <!--grid-->
+        <div>
+            <h2>ShareCalmly Features</h2>
+            <div>
+                <img src="assets/feature_auto-hide.svg" alt="">
+                <strong>Select apps to auto-hide during screen share</strong>
+                <p>Avoid accidentally sharing those texts only meant for you spouse. And get right back to it after sharing is finished.</p>
+            </div>
+            <div>
+                <img src="assets/feature_auto-close.svg" alt="">
+                <strong>Select websites to auto-close during screen share</strong>
+                <p>Prevent Youtube, Robinhood, or your current job search from showing up while sharing your screen.</p>
+            </div>
+            <div>
+                <img src="assets/feature_left-off.svg" alt="">
+                <strong>Pick up where you left off after sharing</strong>
+                <p>ShareCalmly auto-restores your apps to their previous state after your screen share so you can get back to your texts, job search, or Instagram check.</p>
+            </div>
+            <div>
+                <img src="assets/feature_set-up.svg" alt="">
+                <strong>Set-up Once, Never Worry Again</strong>
+                <p>ShareCalmly just runs automatically in the background. You can forget it's even there.</p>
+            </div>
+            <div>
+                <img src="assets/feature_privacy.svg" alt="">
+                <strong>Rest Easy with Built-In Privacy</strong>
+                <p>ShareCalmly only stores your auto-hidden apps and websites locally on your computer. These are never sent to our servers or analyzed.</p>
+            </div>
+            <div>
+                <img src="assets/feature_shortcuts.svg" alt="">
+                <strong>Use custom shortcuts</strong>
+                <p>Use keyboard shortcuts for when you want to manually hide your apps and websites.</p>
+            </div>
+        </div>
+    </section>
+    <!--pricing-->
+    <section>
+        <!--grid-->
+        <h2>Pricing</h2>
+        <div>
+            <strong>Yearly</strong>
+            <h3>Pricing</h3>
+            <p>Free trial for 14 days, no credit card required.<br>$15/year after free trial ends. Cancel anytime.</p>
+            <button>Start free trial</button>
+        </div>
+        <div>
+            <strong>For teams</strong>
+            <h3>Custom pricing</h3>
+            <p>Custom pricing for teams large and small.<br>Discounts for large purchases.</p>
+            <button>Contact us</button>
+        </div>
+        <small>Currently Supports Zoom. Microsoft Teams and Google Meet coming soon.</small>
+    </section>
+    <!--get in touch-->
+    <section>
+        <!--grid-->
+        <h2>Get in Touch</h2>
+        <div>
+            <p>We'd love to hear your feedback!<br>Please reach out if you have questions, suggestions, or bugs.</p>
+            <div>
+                <img src="assets/img-travisse.png" alt="">
+                <strong>Travisse Hansen</strong>
+                <!--socials-->
+                <div>
+                    <a href="#"><img src="assets/icon-mail.svg" alt=""></a>
+                    <a href="#"><img src="assets/icon-twitter.svg" alt=""></a>
+                    <a href="#"><img src="assets/icon-phone.svg" alt=""></a>
+                </div>
+            </div>
+            <div>
+                <img src="assets/img-matias.png" alt="">
+                <strong>Matias Fiori</strong>
+                <!--socials-->
+                <div>
+                    <a href=""><img src="assets/icon-mail.svg" alt=""></a>
+                    <a href=""><img src="assets/icon-twitter.svg" alt=""></a>
+                    <a href=""><img src="assets/icon-web.svg" alt=""></a>
+                </div>
+            </div>
+            <picture>
+                <img src="assets/img-contact.png" alt="">
+            </picture>
+        </div>
+    </section>
+    <footer>
+        <img src="assets/footer-logo.svg" alt="">
+        <div>
+            <a href="#">Pricing</a>
+            <a href="#">Features</a>
+            <a href="#">How It Works</a>
+            <a href="#">Contact</a>
+            <a href="#">Get Plugin</a>
+        </div>
+    </footer>
+</body>
+</html>
