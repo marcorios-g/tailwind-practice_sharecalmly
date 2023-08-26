@@ -55,9 +55,6 @@ module.exports = {
       spacing: {
         '74px': '74px',
       },
-      maxWidth: {
-        fullXL: '1140px',
-      }
     },
   },
   plugins: [],
