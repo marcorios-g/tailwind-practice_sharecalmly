@@ -434,6 +434,11 @@ video {
   display: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: Souvenir, serif;
+  letter-spacing: -2px;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -534,10 +539,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.row-span-2 {
-  grid-row: span 2 / span 2;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -551,6 +552,10 @@ video {
 .my-1\.5 {
   margin-top: 0.375rem;
   margin-bottom: 0.375rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .mb-12 {
@@ -585,10 +590,6 @@ video {
   margin-right: 2rem;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
 .block {
   display: block;
 }
@@ -599,10 +600,6 @@ video {
 
 .grid {
   display: grid;
-}
-
-.inline-grid {
-  display: inline-grid;
 }
 
 .hidden {
@@ -641,18 +638,6 @@ video {
   width: 100%;
 }
 
-.w-16 {
-  width: 4rem;
-}
-
-.w-9 {
-  width: 2.25rem;
-}
-
-.w-\[200px\] {
-  width: 200px;
-}
-
 .max-w-\[1040px\] {
   max-width: 1040px;
 }
@@ -669,28 +654,8 @@ video {
   max-width: 380px;
 }
 
-.max-w-full {
-  max-width: 100%;
-}
-
-.max-w-\[200px\] {
-  max-width: 200px;
-}
-
-.basis-0 {
-  flex-basis: 0px;
-}
-
-.basis-auto {
-  flex-basis: auto;
-}
-
 .auto-rows-min {
   grid-auto-rows: min-content;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -701,16 +666,8 @@ video {
   flex-direction: column;
 }
 
-.items-start {
-  align-items: flex-start;
-}
-
 .items-center {
   align-items: center;
-}
-
-.justify-start {
-  justify-content: flex-start;
 }
 
 .justify-center {
@@ -741,6 +698,11 @@ video {
   gap: 2rem;
 }
 
+.gap-x-14 {
+  -moz-column-gap: 3.5rem;
+       column-gap: 3.5rem;
+}
+
 .gap-x-6 {
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
@@ -748,11 +710,6 @@ video {
 
 .gap-y-16 {
   row-gap: 4rem;
-}
-
-.gap-x-14 {
-  -moz-column-gap: 3.5rem;
-       column-gap: 3.5rem;
 }
 
 .border {
@@ -804,6 +761,11 @@ video {
   padding-right: 1rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -817,11 +779,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .pb-12 {
@@ -852,6 +809,10 @@ video {
   text-align: center;
 }
 
+.font-serif {
+  font-family: Souvenir, serif;
+}
+
 .text-3xl {
   font-size: 32px;
 }
@@ -874,10 +835,6 @@ video {
 
 .text-md {
   font-size: 14px;
-}
-
-.text-\[16px\] {
-  font-size: 16px;
 }
 
 .leading-3 {
@@ -904,21 +861,16 @@ video {
   color: hsla(0, 0%, 8%, 1);
 }
 
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
-}
-
-.text-white {
-  color: hsla(0, 0%, 100%, 1);
-}
-
 .text-icon {
   color: hsla(221, 7%, 57%, 1);
 }
 
 .text-tertiary {
   color: hsla(240, 1%, 41%, 1);
+}
+
+.text-white {
+  color: hsla(0, 0%, 100%, 1);
 }
 
 .underline {
@@ -937,6 +889,12 @@ video {
   transition-duration: 300ms;
 }
 
+@font-face {
+  font-family: 'Souvenir';
+
+  src: url(/fonts/SouvenirLight.otf);
+}
+
 .hover\:bg-black:hover {
   background-color: hsla(0, 0%, 8%, 1);
 }
@@ -953,29 +911,29 @@ video {
   background-color: hsla(0, 0%, 100%, 1);
 }
 
+.hover\:text-black:hover {
+  color: hsla(0, 0%, 8%, 1);
+}
+
 .hover\:text-linkHover:hover {
   color: hsla(225, 7%, 21%, 1);
-}
-
-.hover\:text-white:hover {
-  color: hsla(0, 0%, 100%, 1);
-}
-
-.hover\:text-tertiary:hover {
-  color: hsla(240, 1%, 41%, 1);
 }
 
 .hover\:text-tertiaryHover:hover {
   color: hsla(240, 1%, 38%, 1);
 }
 
-.hover\:text-black:hover {
-  color: hsla(0, 0%, 8%, 1);
+.hover\:text-white:hover {
+  color: hsla(0, 0%, 100%, 1);
 }
 
 @media (min-width: 480px) {
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .sm\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .sm\:mb-2 {
@@ -986,10 +944,6 @@ video {
     margin-left: 0px;
   }
 
-  .sm\:mb-0 {
-    margin-bottom: 0px;
-  }
-
   .sm\:mr-0 {
     margin-right: 0px;
   }
@@ -998,12 +952,12 @@ video {
     display: block;
   }
 
-  .sm\:w-auto {
-    width: auto;
-  }
-
   .sm\:w-\[288px\] {
     width: 288px;
+  }
+
+  .sm\:w-auto {
+    width: auto;
   }
 
   .sm\:max-w-\[324px\] {
@@ -1120,16 +1074,16 @@ video {
     margin-bottom: 0px;
   }
 
+  .md\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
   .md\:ml-0 {
     margin-left: 0px;
   }
 
   .md\:mr-0 {
     margin-right: 0px;
-  }
-
-  .md\:mb-8 {
-    margin-bottom: 2rem;
   }
 
   .md\:flex {
