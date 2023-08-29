@@ -539,6 +539,30 @@ h1, h2, h3, h4, h5, h6 {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-\[-312px\] {
+  top: -312px;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -588,6 +612,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .mr-8 {
   margin-right: 2rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
+}
+
+.mt-\[80px\] {
+  margin-top: 80px;
 }
 
 .block {
@@ -654,6 +686,10 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 380px;
 }
 
+.scroll-mt-20 {
+  scroll-margin-top: 5rem;
+}
+
 .auto-rows-min {
   grid-auto-rows: min-content;
 }
@@ -710,6 +746,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .gap-y-16 {
   row-gap: 4rem;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .border {
@@ -809,10 +849,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-.font-serif {
-  font-family: Souvenir, serif;
-}
-
 .text-3xl {
   font-size: 32px;
 }
@@ -895,6 +931,22 @@ h1, h2, h3, h4, h5, h6 {
   src: url(/fonts/SouvenirLight.otf);
 }
 
+.burger-bar-top-anim{
+  transform: rotate3d(0, 0, 45, 45deg) translateX(5px) translateY(5.5px);
+}
+
+.burger-bar-mid-anim{
+  transform: scale3d(0, 1, 1);
+}
+
+.burger-bar-bot-anim{
+  transform: rotate3d(0, 0, 45, -45deg) translateX(5px) translateY(-7px);
+}
+
+.dropdown-anim{
+  transform: translateY(392px);
+}
+
 .hover\:bg-black:hover {
   background-color: hsla(0, 0%, 8%, 1);
 }
@@ -950,6 +1002,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .sm\:block {
     display: block;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:w-\[288px\] {

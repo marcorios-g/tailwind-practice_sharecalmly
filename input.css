@@ -13,3 +13,19 @@
         letter-spacing: -2px;
     }
 }
+
+.burger-bar-top-anim{
+    transform: rotate3d(0, 0, 45, 45deg) translateX(5px) translateY(5.5px);
+}
+
+.burger-bar-mid-anim{
+    transform: scale3d(0, 1, 1);
+}
+
+.burger-bar-bot-anim{
+    transform: rotate3d(0, 0, 45, -45deg) translateX(5px) translateY(-7px);
+}
+
+.dropdown-anim{
+    transform: translateY(392px);
+}
