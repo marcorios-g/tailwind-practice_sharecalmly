@@ -539,12 +539,16 @@ h1, h2, h3, h4, h5, h6 {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
 
-.sticky {
-  position: sticky;
+.relative {
+  position: relative;
 }
 
 .top-0 {
@@ -555,12 +559,20 @@ h1, h2, h3, h4, h5, h6 {
   top: -312px;
 }
 
+.top-full {
+  top: 100%;
+}
+
 .z-10 {
   z-index: 10;
 }
 
 .z-20 {
   z-index: 20;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .mx-auto {
@@ -612,14 +624,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .mr-8 {
   margin-right: 2rem;
-}
-
-.mt-40 {
-  margin-top: 10rem;
-}
-
-.mt-\[80px\] {
-  margin-top: 80px;
 }
 
 .block {
@@ -841,8 +845,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 3rem;
 }
 
-.pt-6 {
-  padding-top: 1.5rem;
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .text-center {
@@ -921,15 +925,32 @@ h1, h2, h3, h4, h5, h6 {
   transition-duration: 150ms;
 }
 
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
+
+/* HEADING FONT */
 
 @font-face {
   font-family: 'Souvenir';
 
   src: url(/fonts/SouvenirLight.otf);
 }
+
+/* NAV SCROLL BEHAVIOUR */
+
+.scroll-down nav{
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up nav{
+}
+
+/* BURGER MENU */
 
 .burger-bar-top-anim{
   transform: rotate3d(0, 0, 45, 45deg) translateX(5px) translateY(5.5px);
@@ -1073,10 +1094,6 @@ h1, h2, h3, h4, h5, h6 {
 
   .sm\:pr-4 {
     padding-right: 1rem;
-  }
-
-  .sm\:pt-12 {
-    padding-top: 3rem;
   }
 
   .sm\:pt-14 {

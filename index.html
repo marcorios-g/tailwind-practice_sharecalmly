@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="text-black">
-    <nav class="sticky w-full top-0">
+    <nav class="fixed w-full top-0 z-50 transition duration-1000">
         <!--nav-->
         <div class="z-20 flex flex-row justify-between items-center bg-bgBlue py-4 pl-4 pr-2 border-b border-blueBorder sm:pl-6 sm:pr-4 md:px-8 xl:px-10">
             <a href="#" class="text-black hover:text-linkHover transition duration-300">
@@ -37,17 +37,17 @@
                 </div>
                 <button class="hidden sm:block px-4 py-3 bg-black text-white hover:bg-linkHover transition duration-300"><a href="#pricing">Get Mac Plugin</a></button>
                 <!--burger menu-->
-                <a href="#" class="burger-menu flex md:hidden flex-col justify-center items-center w-14 h-12 ml-2">
+                <div class="burger-menu flex md:hidden flex-col justify-center items-center w-14 h-12 ml-2">
                     <div class="bar-1 w-6 h-0.5 bg-black transition duration-300"></div>
                     <div class="bar-2 w-6 h-0.5 my-1.5 bg-black transition duration-300"></div>
                     <div class="bar-3 w-6 h-0.5 bg-black transition duration-300"></div>
-                </a>
+                </div>
                 <!--end burger menu-->
             </div>
             <!--end navigation-->
         </div>
         <!--dropdown menu-->
-        <section class="dropdown absolute w-full top-[-312px] z-10 flex flex-col md:hidden gap-2 bg-white px-4 py-8 transition duration-300">
+        <div class="dropdown absolute w-full top-[-312px] z-10 flex flex-col md:hidden gap-2 bg-white px-4 py-8 transition duration-300">
             <div class="flex flex-col w-full">
                 <a href="#pricing" class="px-4 py-3 text-center">Pricing</a>
                 <a href="#how-it-works" class="px-4 py-3 text-center">How It Works</a>
@@ -55,10 +55,10 @@
                 <a href="#contact" class="px-4 py-3 text-center">Contact</a>
                 </div>
             <button class="w-full px-4 py-3 text-center bg-black text-white sm:hidden"><a href="">Get Mac Plugin</a></button>
-        </section>
+        </div>
     </nav>
     <!--hero-->
-    <section id="hero" class="scroll-mt-20 px-4 pt-6 pb-12 sm:px-6 sm:pt-12 sm:pb-14 md:pl-8 md:pr-0 xl:px-74px bg-bgBlue">
+    <section id="hero" class="scroll-mt-20 px-4 pt-32 pb-12 sm:px-6 sm:pb-14 md:pl-8 md:pr-0 xl:px-74px bg-bgBlue">
         <!--max width-->
         <div class="max-w-[1140px] mx-auto grid md:grid-cols-2">
             <!--hero text-->

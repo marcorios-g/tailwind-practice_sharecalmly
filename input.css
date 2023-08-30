@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* HEADING FONT */
+
 @font-face {
     font-family: 'Souvenir';
     src: url(/fonts/SouvenirLight.otf);
@@ -13,6 +16,18 @@
         letter-spacing: -2px;
     }
 }
+
+/* NAV SCROLL BEHAVIOUR */
+
+.scroll-down nav{
+    transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up nav{
+
+}
+
+/* BURGER MENU */
 
 .burger-bar-top-anim{
     transform: rotate3d(0, 0, 45, 45deg) translateX(5px) translateY(5.5px);
