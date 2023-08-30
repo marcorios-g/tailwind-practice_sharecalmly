@@ -547,20 +547,12 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
 }
 
-.relative {
-  position: relative;
-}
-
 .top-0 {
   top: 0px;
 }
 
 .top-\[-312px\] {
   top: -312px;
-}
-
-.top-full {
-  top: 100%;
 }
 
 .z-10 {
@@ -640,6 +632,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .hidden {
   display: none;
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
 }
 
 .h-0 {
@@ -1035,6 +1031,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .sm\:w-auto {
     width: auto;
+  }
+
+  .sm\:w-\[570px\] {
+    width: 570px;
   }
 
   .sm\:max-w-\[324px\] {
