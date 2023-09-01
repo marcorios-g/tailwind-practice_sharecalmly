@@ -10,4 +10,5 @@ I enjoyed using utility classes for this page, it was so much easier applying pr
 
 ## Acknowledgements:
 - [ShareCalmly original website](https://sharecalmly.com/)
-- Victor S. My colleague, an awesome designer/developer who taught me how to add SVG paths.
+- Victor S. An awesome colleague/designer/developer who taught me how to add SVG paths.
+- Scott W. Another awesome colleague and master developer who helped me fix some errors.

@@ -32,6 +32,7 @@ const burgerBar3 = document.querySelector('.bar-3');
 const dropdownMenu = document.querySelector('.dropdown');
 
 burgerMenu.addEventListener('click', function () {
+    
     burgerBar1.classList.toggle('burger-bar-top-anim');
     
     burgerBar2.classList.toggle('burger-bar-mid-anim');

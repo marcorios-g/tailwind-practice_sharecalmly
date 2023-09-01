@@ -19,18 +19,18 @@
 
 /* NAV SCROLL BEHAVIOUR */
 
-.scroll-down nav{
+.scroll-down header{
     transform: translate3d(0, -100%, 0);
 }
 
-.scroll-up nav{
+.scroll-up header{
 
 }
 
 /* BURGER MENU */
 
 .burger-bar-top-anim{
-    transform: rotate3d(0, 0, 45, 45deg) translateX(5px) translateY(5.5px);
+    transform: translateY(8px) rotate3d(0, 0, 45, 45deg);
 }
 
 .burger-bar-mid-anim{
@@ -38,7 +38,7 @@
 }
 
 .burger-bar-bot-anim{
-    transform: rotate3d(0, 0, 45, -45deg) translateX(5px) translateY(-7px);
+    transform: translateY(-8px) rotate3d(0, 0, 45, -45deg);
 }
 
 .dropdown-anim{
