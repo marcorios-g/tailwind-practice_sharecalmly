@@ -934,7 +934,7 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: 'Souvenir';
 
-  src: url(/fonts/SouvenirLight.otf);
+  src: url(./fonts/SouvenirLight.otf);
 }
 
 /* NAV SCROLL BEHAVIOUR */
